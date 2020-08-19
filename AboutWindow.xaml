@@ -1,0 +1,49 @@
+﻿<Window x:Class="Sharon_MidtermV2.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sharon_MidtermV2"
+        mc:Ignorable="d"
+        Title="AboutWindow" Height="450" Width="800" Background="LightSeaGreen">
+    <Window.ContextMenu>
+        <ContextMenu>
+            <MenuItem x:Name="menu_file" FontSize="15" Header="File">
+                <MenuItem x:Name="menu_New" Header="New"/>
+                <MenuItem x:Name="menu_save" Header="Save"/>
+                <MenuItem x:Name="menu_Quit" Header="Quit" Click="RightClick_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="Edit" Header="Edit" FontSize="15">
+                <MenuItem Header="Insert" FontFamily="Arial"/>
+                <MenuItem Header="Update" FontFamily="Arial" />
+                <MenuItem Header="Delete" FontFamily="Arial" />
+            </MenuItem>
+            <MenuItem x:Name="HelpH" FontSize="15" Header="Help"/>
+
+
+        </ContextMenu>
+    </Window.ContextMenu>
+
+    <Grid>
+        <DockPanel LastChildFill="False" Margin="0,0,0,392">
+            <Menu x:Name="HomeMenu1" Width="799" Height="66">
+                <MenuItem x:Name="menu_file1" FontSize="15" Header="File">
+                    <MenuItem x:Name="menu_New1" Header="New"/>
+                    <MenuItem x:Name="menu_save1" Header="Save"/>
+                    <MenuItem x:Name="menu_Quit1" Header="Quit" Click="RightClick_Click"/>
+                </MenuItem>
+                <MenuItem x:Name="Edit1" Header="Edit" FontSize="15">
+                    <MenuItem Header="Insert" FontFamily="Arial" />
+                    <MenuItem Header="Update" FontFamily="Arial" />
+                    <MenuItem Header="Delete" FontFamily="Arial"/>
+                </MenuItem>
+
+                <MenuItem x:Name="HelpH1" FontSize="15" Header="Help" />
+            </Menu>
+        </DockPanel>
+        <Label  FontWeight="ExtraBold" FontSize="20" Margin="0,42,-91,-65">Welcome to Airline Application</Label>
+        <StackPanel Orientation="Vertical" Margin="0,92,0,10" HorizontalAlignment="Left" Width="790">
+            <TextBlock Text="Airline application system provides you with view customer, Passanger , airlines and flights functionality along with add update and delete.You can login with the credentials,Can find user details, flight details and passanger  details as well." TextWrapping="Wrap" Height="250" Width="538" Foreground="Black" FontSize="20"/>
+        </StackPanel>
+    </Grid>
+</Window>
